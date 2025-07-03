@@ -1,0 +1,14 @@
+name: Reusable Workflow
+
+on:
+    workflow_call:
+        
+jobs:
+    ru1-job1:
+        
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Prueba de mensaje de reutilizacion"
+              run: |
+                echo "Estoy reusando worflow one, using branch"
